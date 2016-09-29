@@ -109,7 +109,7 @@ public class CalculatorImpl implements Calculator {
             }
         }
         //System.out.println("isValid = " + result);
-        //System.out.println("***********************************************");
+        
         return result;
     }
 
@@ -142,7 +142,7 @@ public class CalculatorImpl implements Calculator {
         }
         //Pass a subexpression within brackets in method mathCount() for calculation.
         d = mathCount(expression.substring(indexOfOpenBrasket + 1, indexOfCloseBrasket));
-        //SSystem.out.println("expression = " + expression.substring(indexOfOpenBrasket + 1, indexOfCloseBrasket) + "   result = " + d);
+        
 
         if (Double.valueOf(d).equals(NaN)) {
             result = "false";
@@ -157,7 +157,7 @@ public class CalculatorImpl implements Calculator {
         if (!subResult.equals(null)) {
             result = expression.substring(0, indexOfOpenBrasket) + subResult + expression.substring(indexOfCloseBrasket + 1, expression.length());
         }
-        //System.out.println("fragmentation result = " + result);
+        
         return result;
     }
 
