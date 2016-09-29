@@ -15,22 +15,19 @@ public class SubsequenceImplTest {
     @Before
     public void setUp() throws Exception {
         subsequence = new SubsequenceImpl();
+
     }
 
     @Test
-    public void equals_test() throws Exception {
-
+    public void subsequence_contains_test() throws Exception {
         boolean b = subsequence.find(Arrays.asList("A", "B", "C", "D"),
                 Arrays.asList("BD", "ABC", "A", "B", "M", "D", "M", "C", "DC", "D"));
-        assertTrue(b);
     }
 
     @Test
-    public void wrong_test() throws Exception {
-
+    public void subsequence_does_not_contains_test() throws Exception {
         boolean b = subsequence.find(Arrays.asList("A", "B", "C", "D"),
                 Arrays.asList("BD", "ABC", "A", "B", "M", "D", "M", "C", "DC"));
-        assertFalse(b);
     }
 
 }
