@@ -17,7 +17,7 @@ public class SubsequenceImpl implements Subsequence {
         
         try {
 
-            result = listProcess(x, y) == true ? result = true : false;
+            result = listProcess(x, y) == true ? true : false;
         } catch (Exception e) {
         } finally {
             return result;
